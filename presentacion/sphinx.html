@@ -23,7 +23,7 @@
             </div>
 
 
-            <div id="inicial" class="step" data-x="-1000" data-y="-1500" data-scale="30">
+            <div id="inicial" class="step" data-x="-1000" data-y="-1500" data-scale="15">
                 <q>Mysql meetup</q>
                 <h1>intro a Sphinx</h1>
                 <q></q>
@@ -31,17 +31,18 @@
                 <footer>9 de Febrero 2012</footer>
             </div>
 
-            <div id="agenda" class="step" data-x="-7500" data-y="-1000">
+            <div id="agenda" class="step" data-x="-6500" data-y="-1000">
                 <ul>
                     <li>Qué es / Para qué?</li>
-                    <li>Instalación y configuración</li>
+                    <li>cómo funciona</li>
                     <li>Indexando datos</li>
                     <li>Actualizando datos</li>
+                    <li>demo!</li>
                 </ul>
             </div>
 
 
-            <div id="que-es" class="step" data-x="-6500" data-y="-1000">
+            <div id="que-es" class="step" data-x="-5500" data-y="-1000">
                 <ul>
                     <li>motor de búsqueda full text (FOSS)</li>
                     <li>diseñado para indexar bases de datos</li>
@@ -49,7 +50,7 @@
                 </ul>
             </div>
 
-            <div id="porque" class="step" data-x="-5500" data-y="-1000">
+            <div id="porque" class="step" data-x="-4500" data-y="-1000">
                 <h1>porqué?</h1>
                 <ul>
                     <li>> velocidad de indexación / búsqueda</li>
@@ -57,26 +58,43 @@
                     <li>mejor relevancia</li>
                 </ul>
             </div>
-            <div id="porque2" class="step" data-x="-4500" data-y="-1000">
+            <div id="porque2" class="step" data-x="-3500" data-y="-1000">
                 <h1>otras razones</h1>
                 <ul>
-                    <li>"faceted" searching</li>
-                    <li>Geo-distancia</li>
-                    <li>HTML stripper</li>
+                    <li>"faceted" searching - morfología</li>
+                    <li>Geo-distancia - HTML stripper</li>
                     <li>etc, etc, etc...</li>
                 </ul>
             </div>
-            <div id="workflow" class="step" data-x="5000" data-y="-4000" data-rotate="90" data-scale="3">
-                <h2>workflow básico</h2>
-                <ul>
-                    <li>configurar indices</li>
-                    <li>indexar</li>
-                    <li>consultar</li>
-                    <li>repetir</li>
+            
+            <div id="como-funciona" class="step" data-x="0" data-y="5000" data-rotate="90" data-scale="5">
+                    <h2>dos programas</h2>
+                    <ul>
+                        <li>- <strong>indexer</strong> <small>consulta la BD, crea indices</small></li>
+                        <li>- <strong>searchd</strong> <small>usa los indices, responde consultas</small></li>
+                    </ul>
+                    <h2>programas cliente</h2>
+                    <ul>
+                        <li>- API nativa <small>php, python, java, ruby...</small></li>
+                        <li>- SphinxSE <small>MySql Engine</small></li>
+                    </ul>
                 </ul>
             </div>
             
+            <div id="workflow" class="step" data-x="-4000" data-y="5000" data-rotate="90" data-scale="5">
+                <h2>Orígenes de datos</h2>
+                <small>Mysql, PgSql, XML pipes</small>
+                <h2>Indices</h2>
+                <small>morfología, stopwords, wordforms, exceptions, charset, html strip...</small>
+                <h2>Tipos</h2>
+                <small>distribuidos, tiempo real</small>
+            </div>
             
+             <div id="ejemplo1" class="step" data-x="-8000" data-y="5000" data-rotate="90" data-scale="5">
+                 <h2>Ejemplo básico:</h2>
+                 <p style="padding-top: 20px"><img src="img/ejemplo1.png"></p>
+                
+            </div>           
 
         </div>
         <script src="js/impress.js"></script>

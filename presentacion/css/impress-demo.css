@@ -528,3 +528,10 @@ a,iframe,
     display: block;
 }
 
+.step ol li{
+padding-left: 40px;
+}
+
+small {
+    font-size: 50%;
+}
