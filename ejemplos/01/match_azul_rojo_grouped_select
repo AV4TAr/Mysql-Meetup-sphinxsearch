@@ -1,0 +1,1 @@
+mysql -h127.0.0.1 -P9306 -e"SELECT * FROM main WHERE MATCH('azul|rojo') GROUP BY grupo_id; SHOW META;"

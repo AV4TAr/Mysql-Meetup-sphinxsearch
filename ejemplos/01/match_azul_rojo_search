@@ -1,0 +1,2 @@
+# Busca "diego" en todos los campos
+search -c  sphinx.01.conf 'azul|rojo'

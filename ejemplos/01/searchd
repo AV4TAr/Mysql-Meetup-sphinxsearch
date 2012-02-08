@@ -1,0 +1,1 @@
+searchd --config ./sphinx.01.conf
