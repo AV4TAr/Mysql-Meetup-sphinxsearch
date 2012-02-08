@@ -25,7 +25,7 @@
 
             <div id="inicial" class="step" data-x="-1000" data-y="-1500" data-scale="15">
                 <q>Mysql meetup</q>
-                <h1>intro a Sphinx</h1>
+                <h1>intro. a Sphinx</h1>
                 <q></q>
                 <footer>Diego Sapriza - @AV4TAr</footer>
                 <footer>9 de Febrero 2012</footer>
@@ -33,9 +33,9 @@
 
             <div id="agenda" class="step" data-x="-6500" data-y="-1000" >
                 <ul>
-                    <li>Qué es / Para qué?</li>
+                    <li>qué es / para qué?</li>
                     <li>cómo funciona</li>
-                    <li>Indexando datos</li>
+                    <li>indexando datos</li>
                     <li>Actualizando datos</li>
                     <li>demo!</li>
                 </ul>
@@ -51,7 +51,7 @@
             </div>
 
             <div id="porque" class="step" data-x="-4000" data-y="-1000">
-                <h1>porqué?</h1>
+                <h1>¿porqué?</h1>
                 <ul>
                     <li>> velocidad de indexación / búsqueda</li>
                     <li>> escalabilidad</li>
@@ -62,7 +62,7 @@
                 <h1>otras razones</h1>
                 <ul>
                     <li>"faceted" searching - morfología</li>
-                    <li>Geo-distancia - HTML stripper</li>
+                    <li>geo-distancia - HTML stripper</li>
                     <li>etc, etc, etc...</li>
                 </ul>
             </div>
@@ -81,11 +81,11 @@
             </div>
 
             <div id="workflow" class="step" data-x="-4000" data-y="5000" data-rotate="90"  data-scale="5">
-                <h2>Orígenes de datos</h2>
-                <small>Mysql, PgSql, XML pipes (mongodb,...)</small>
-                <h2>Indices</h2>
+                <h2>orígenes de datos</h2>
+                <small>Mysql, PgSql, XML pipes (mongodb,...), ODBC</small>
+                <h2>indices</h2>
                 <small>morfología, stopwords, wordforms, exceptions, charset, html strip...</small>
-                <h2>Tipos</h2>
+                <h2>tipos</h2>
                 <small>disk based, distribuidos, tiempo real</small>
             </div>
             
@@ -125,27 +125,72 @@
             </div> 
             
              <div id="actualizando" class="step" data-x="-7000" data-y="-5500" data-rotate="-90" >
-                 <h1>Actualizando</h1>
-                 <code>indexer --rotate --all</code>
+                 <h1>indexando</h1>
+                 <code>indexer YOUR_INDEX</code>
             </div>
             
-             <div id="actualizando2" class="step" data-x="-6500" data-y="-6000" data-rotate="-90" data-z="1000">
+            <div id="actualizando2" class="step" data-x="-7000" data-y="-6500" data-rotate="-90" >
+                <code><img src="img/indexer_user_timelines.png"></code>
+            </div>
+            
+            
+            
+             <div id="actualizando3" class="step" data-x="-6200" data-y="-6000" data-rotate="-90" data-z="1000">
                  <h1 style="text-align: center">¿qué indexo?</h1>
                  <p style="text-align: center;">
                      todo o solo lo nuevo
                  </p>                 
             </div>
             
-             <div id="use-the-delta" class="step" data-x="-6000" data-y="-5000" data-rotate="-90" data-z="2000">
+             <div id="use-the-delta" class="step" data-x="-5500" data-y="-5500" data-rotate="-90" data-z="2000">
                  
                  <p style="text-align: center;">
                      use the delta, Luke!
                  </p>                 
             </div>
             
-             <div id="demo-time" class="step" data-x="-1000" data-y="-1500" data-z="200000">
-                 
+             <div id="use-the-delta2" class="step" data-x="-5500" data-y="-6500" data-rotate="-90" data-z="2000">
+                 <h1 style="text-align: center">el "delta"</h1>
                  <p style="text-align: center;">
+                     <img src="img/delta_main_actualizar.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta2_tiempo" class="step" data-x="-5500" data-y="-7500" data-rotate="-90" data-z="2000">
+                 <h2 style="text-align: center">delta</h2>
+                 <br>
+                 <p style="text-align: center; ">
+                     <img src="img/delta_main_actualizar_tamanio.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta3" class="step" data-x="-5500" data-y="-8500" data-rotate="-90" data-z="2000">
+                 <h2 style="text-align: center">delta</h2>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_indexando.png">
+                 </p>                 
+            </div>
+
+            
+             <div id="use-the-delta-merge" class="step" data-x="-4700" data-y="-7000" data-rotate="-90" data-z="3000">
+                 <h2 style="text-align: center">merge</h2>
+                 <br>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_merge_tamanio.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta-merge" class="step" data-x="-4700" data-y="-8000" data-rotate="-90" data-z="3000">
+                 <h2 style="text-align: center">merge</h2>
+                 <br><br><br>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_merge.png">
+                 </p>                 
+            </div>
+            
+             <div id="demo-time" class="step" data-x="-4000" data-y="-6000" data-rotate="-90" data-z="3000">
+                  
+                 <p style="text-align: center; font-size: 100px">
                      Demo time!
                  </p>                 
             </div>

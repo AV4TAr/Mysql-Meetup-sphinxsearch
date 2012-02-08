@@ -1,1 +1,0 @@
-mysql -h127.0.0.1 -P9306 -e"select * from main WHERE MATCH('azul|rojo');"

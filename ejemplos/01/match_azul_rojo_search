@@ -1,2 +1,1 @@
-# Busca "diego" en todos los campos
-search -c  sphinx.01.conf 'azul|rojo'
+mysql -h127.0.0.1 -P9306 -e"select * from main WHERE MATCH('azul|rojo');"
