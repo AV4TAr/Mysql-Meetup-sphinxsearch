@@ -1,0 +1,3 @@
+indexer --merge user_timelines delta_user_timelines --rotate
+mysql -u***** -p**** -e'UPDATE app03_twSocial.sph_counter SET max_doc_id = last_doc_id WHERE counter_id = "user_timelines"' -hdb_rw
+indexer delta_user_timelines --rotate

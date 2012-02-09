@@ -1,0 +1,18 @@
+mysql> describe sph_counter;
++-------------+---------------------+------+-----+-------------------+-------+
+| Field       | Type                | Null | Key | Default           | Extra |
++-------------+---------------------+------+-----+-------------------+-------+
+| counter_id  | varchar(20)         | NO   | PRI | NULL              |       | 
+| max_doc_id  | bigint(20) unsigned | NO   |     | NULL              |       | 
+| last_doc_id | bigint(20) unsigned | NO   |     | NULL              |       | 
+| modif       | timestamp           | NO   |     | CURRENT_TIMESTAMP |       | 
++-------------+---------------------+------+-----+-------------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from sph_counter;
++----------------+------------+-------------+---------------------+
+| counter_id     | max_doc_id | last_doc_id | modif               |
++----------------+------------+-------------+---------------------+
+| user_timelines |   35648142 |    35796327 | 2012-02-08 15:13:48 | 
++----------------+------------+-------------+---------------------+
+1 row in set (0.00 sec)
