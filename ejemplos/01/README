@@ -1,0 +1,9 @@
+EJEMPLO 01
+
+- creacion de bd
+- configuración de sphinx
+- indexación
+- busqueda
+   - usando sphinxQL
+   - usando PHP
+   - usando search
