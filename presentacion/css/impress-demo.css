@@ -132,7 +132,7 @@ a,iframe,
 }
 
 .step:not(.active) {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .step h1 {
