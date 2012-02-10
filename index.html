@@ -1,1 +1,233 @@
-My GitHub Page
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>sphinxsearch by Diego Sapriza - @AV4TAr</title>
+
+        <meta name="description" content="presentación de sphinxsearch para la primer Mysql Meetup en Montevideo Uruguay">
+        <meta name="author" content="Diego Sapriza" />
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+        <link href="css/impress-demo.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <div id="impress" class="impress-not-supported">
+
+
+            <div class="fallback-message">
+                <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+                <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+            </div>
+
+
+            <div id="inicial" class="step" data-x="-1000" data-y="-1500" data-scale="15" data-z="0">
+                <q>Mysql meetup</q>
+                <h1>intro. a Sphinx</h1>
+                <q></q>
+                <footer>Diego Sapriza - @AV4TAr</footer>
+                <footer>9 de Febrero 2012</footer>
+            </div>
+
+            <div id="agenda" class="step" data-x="-8000" data-y="-1000" data-z="-1000">
+                <ul>
+                    <li>qué es / para qué?</li>
+                    <li>cómo funciona</li>
+                    <li>indexando datos</li>
+                    <li>Actualizando datos</li>
+                    <li>demo!</li>
+                </ul>
+            </div>
+
+
+            <div id="donde" class="step" data-x="-7000" data-y="-1000" data-z="">
+                <p style="text-align: center; font-size: 55px">
+                    http://sphinxsearch.com/<br>
+                    release 2.0.3<br>
+                    
+                </p>
+            </div>
+            
+            <div id="que-es" class="step" data-x="-5500" data-y="-1000" data-z="-1000">
+                <ul>
+                    <li>motor de búsqueda full text (FOSS)</li>
+                    <li>diseñado para indexar bases de datos</li>
+                    <li>bajo el paradigma de SQL</li>
+                </ul>
+            </div>
+
+            <div id="porque" class="step" data-x="-4000" data-y="-1000">
+                <h1>¿porqué?</h1>
+                <ul>
+                    <li>> velocidad de indexación / búsqueda</li>
+                    <li>> escalabilidad</li>
+                    <li>mejor <strong>relevancia</strong></li>
+                </ul>
+            </div>
+            <div id="porque2" class="step" data-x="-2500" data-y="-1000"  data-z="-1000">
+                <h1>otras razones</h1>
+                <ul>
+                    <li>"faceted" searching - morfología</li>
+                    <li>geo-distancia - HTML stripper</li>
+                    <li>etc, etc, etc...</li>
+                </ul>
+            </div>
+
+            <div id="como-funciona" class="step" data-x="0" data-y="5000" data-rotate="90" data-scale="5">
+                <h2>dos programas</h2>
+                <ul>
+                    <li>- <strong>indexer</strong> <small>consulta la BD, crea indices</small></li>
+                    <li>- <strong>searchd</strong> <small>usa los indices, responde consultas</small></li>
+                </ul>
+                <h2>programas cliente</h2>
+                <ul>
+                    <li>- API nativa <small>php, python, java, ruby...</small></li>
+                    <li>- SphinxSE <small>MySql Engine</small></li>
+                </ul>
+            </div>
+
+            <div id="workflow" class="step" data-x="-4000" data-y="5000" data-rotate="90"  data-scale="5">
+                <h2>orígenes de datos</h2>
+                <small>Mysql, PgSql, XML pipes (mongodb,...), ODBC</small>
+                <h2>indices</h2>
+                <small>morfología, stopwords, wordforms, exceptions, charset, html strip...</small>
+                <h2>tipos</h2>
+                <small>disk based, distribuidos, tiempo real</small>
+            </div>
+            
+            <div id="workflow2" class="step" data-x="-4000" data-y="10000" data-rotate="90" data-scale="5">
+                <h2 style="text-align: center">workflow</h2>
+                <br>
+                <p style="text-align: center"><img src="img/workflow.png"></p>
+            </div>
+
+            <div id="ejemplo1" class="step" data-x="-8000" data-y="5000" data-rotate="90" data-scale="5">
+                <h2>único host:</h2>
+                <p style="padding-top: 20px"><img src="img/ejemplo1.png"></p>
+            </div>  
+            
+            <div id="ejemplo1-bifes1" class="step codigo" data-x="-8000" data-y="5000" data-rotate-y="90" data-scale="3">
+                <h3>a los bifes: Data source</h3>
+                <code><img src="img/code1.png"></code>
+            </div>    
+
+            <div id="ejemplo1-bifes2" class="step codigo" data-x="-8000" data-y="5000" data-z="-3000" data-rotate-y="90" data-scale="3">
+                <h3>índice local</h3>
+                <code><img src="img/code2.png"></code>
+            </div> 
+
+            <div id="ejemplo2-distrib" class="step" data-x="-8000" data-y="10000" data-rotate="90" data-scale="5">
+                <h2>distribuído:</h2>
+                <p style="padding-top: 20px"><img src="img/distrib1.png"></p>
+            </div> 
+
+            <div id="ejemplo2-bifes1" class="step codigo" data-x="-8000" data-y="10000" data-rotate-y="90" data-scale="3">
+                <h3>índice distribuido</h3>
+                <code><img src="img/distrib1-index.png"></code>
+            </div>   
+            
+            <div id="ejemplo2-bifes2" class="step codigo" data-x="-8000" data-y="10000" data-z="-3000" data-rotate-y="90" data-scale="3">
+                <p>remotos se consultan en <b class="rotating">paralelo</b>.</p>
+                <p>se devuelve un <strong>único</strong> resultado.</p>
+            </div> 
+            
+             <div id="actualizando" class="step" data-x="-7000" data-y="-5500" data-rotate="-90" >
+                 <h1>indexando</h1>
+                 <code>indexer YOUR_INDEX</code>
+            </div>
+            
+            <div id="actualizando2" class="step" data-x="-7000" data-y="-6500" data-rotate="-90" >
+                <code><img src="img/indexer_user_timelines.png"></code>
+            </div>
+            
+            
+            
+             <div id="actualizando3" class="step" data-x="-6200" data-y="-6000" data-rotate="-90" data-z="1000">
+                 <h1 style="text-align: center">¿qué indexo?</h1>
+                 <p style="text-align: center;">
+                     todo o solo lo nuevo
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta" class="step" data-x="-5500" data-y="-5500" data-rotate="-90" data-z="2000">
+                 
+                 <p style="text-align: center;">
+                     use the delta, Luke!
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta2" class="step" data-x="-5500" data-y="-6500" data-rotate="-90" data-z="2000">
+                 <h1 style="text-align: center">el "delta"</h1>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_actualizar.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta2_tiempo" class="step" data-x="-5500" data-y="-7500" data-rotate="-90" data-z="2000">
+                 <h2 style="text-align: center">delta</h2>
+                 <br>
+                 <p style="text-align: center; ">
+                     <img src="img/delta_main_actualizar_tamanio.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta3" class="step" data-x="-5500" data-y="-8500" data-rotate="-90" data-z="2000">
+                 <h2 style="text-align: center">delta</h2>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_indexando.png">
+                 </p>                 
+            </div>
+
+            
+             <div id="use-the-delta-merge" class="step" data-x="-4700" data-y="-7000" data-rotate="-90" data-z="3000">
+                 <h2 style="text-align: center">merge</h2>
+                 <br>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_merge_tamanio.png">
+                 </p>                 
+            </div>
+            
+             <div id="use-the-delta-merge-time" class="step" data-x="-4700" data-y="-8000" data-rotate="-90" data-z="3000">
+                 <h2 style="text-align: center">merge</h2>
+                 <br><br><br>
+                 <p style="text-align: center;">
+                     <img src="img/delta_main_merge.png">
+                 </p>                 
+            </div>
+            
+             <div id="demo-time" class="step" data-x="-4000" data-y="-6000" data-rotate="-90" data-z="3000">
+                  
+                 <p style="text-align: center; font-size: 100px">
+                     Demo time!
+                 </p>                 
+            </div>
+            
+             <div id="finish" class="step" data-x="-4000" data-y="-7000" data-rotate="-90" data-z="3000">
+                 <ul style="font-size: 30px">
+                     <li>sphinx:</li>
+                     <ol>
+                        <li>- http://sphinxsearch.com/</li>
+                     </ol>
+                     <li>presentación:</li>
+                     <ol>
+                        <li>- <a href="https://github.com/AV4TAr/Mysql-Meetup-sphinxsearch" target="_blank">https://github.com/AV4TAr/Mysql-Meetup-sphinxsearch</a></li>
+                        <li>- hecho con: <a href="http://bartaz.github.com/impress.js/" target="_blank">impress.js</a></li>
+                     </ol>
+                     <li>contacto:</li>
+                     <ol>
+                         <li><a href="http://about.me/diego.sapriza" target="_blank">http://about.me/diego.sapriza</a></li>
+                     </ol>
+                 </ul>
+            </div>
+            <!--
+            <div id="TODO" class="step" data-x="0" data-y="2000" data-scale="25">
+               
+            </div>
+            -->
+            
+        </div>
+        <script src="js/impress.js"></script>
+    </body>
+</html>
