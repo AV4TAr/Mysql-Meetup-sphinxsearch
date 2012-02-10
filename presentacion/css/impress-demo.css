@@ -519,3 +519,11 @@ code{
 .codigo .gist{
     font-size: 20px;
 }
+
+#finish{
+    width: 1000px;
+}
+
+#finish li {
+    padding-top: 10px;
+}
